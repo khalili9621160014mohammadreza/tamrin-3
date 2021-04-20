@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Yekan_Bakh_Regular";
+  src: url("./fonts/Yekan_Bakh_EN_04_Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(180deg, #f2f2f2 51%, #fff);
+  background-repeat: no-repeat;
+  direction: rtl;
+  font-family: "Yekan_Bakh_Regular";
+  font-family: 16px;
+  min-height: 100vh;
+}
+.footer {
+  padding: 12px;
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.title {
+  padding: 22.5px 0 23.2px 44px;
+  font-family: "Yekan_Bakh_Regular";
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 2.5;
+  text-align: right;
+  color: #00a4ae;
+  position: relative;
+}
+.title::after {
+  content: " ";
+  position: absolute;
+  width: 26px;
+  height: 6px;
+  background-color: #edca1f;
+  bottom: 29.2px;
+  right: 0;
+}
+.footer__functional-link__lists {
+  display: flex;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+ul li {
+  line-height: 40px;
+}
+.footer__contact-us__bold {
+  font-weight: 800;
+}
+.footer__functional-link__lists__left {
+  padding-right: 40px;
+}
+.list {
+  list-style-type: square;
+}
+.list a {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+  transition: 0.3s;
+}
+
+.list a:hover {
+  font-weight: 900;
+  color: rgb(31, 31, 31);
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    display: block;
+  }
+  .list {
+    list-style-type: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer__functional-link__lists {
+    display: block;
+  }
+  .footer__functional-link__lists__left {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    padding: unset;
+    text-align: center;
+  }
+  .title::after {
+    content: " ";
+    position: absolute;
+    width: 26px;
+    height: 6px;
+    background-color: #edca1f;
+    bottom: 4.2px;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  ul li {
+    text-align: center;
+  }
+}
+@media print {
+  .list a {
+    text-decoration: underline;
+    color: rgb(73, 73, 255);
+  }
+}

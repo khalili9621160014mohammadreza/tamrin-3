@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Yekan_Bakh_Regular";
+  src: url("./fonts/Yekan_Bakh_EN_04_Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(180deg, #f2f2f2 51%, #fff);
+  background-repeat: no-repeat;
+  direction: rtl;
+  font-family: "Yekan_Bakh_Regular";
+  font-family: 16px;
+  min-height: 100vh;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0px auto;
+  max-width: 1600px;
+}
+.card-container__card {
+  margin: 10px 10px;
+  height: 400px;
+  padding: 12px;
+  width: 25%;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.075);
+  text-decoration: none;
+}
+.card-container__card p,
+.card-container__card h2 {
+  color: #000000;
+}
+.card-container__card:hover {
+  box-shadow: 4px 19px 38px rgba(0, 0, 0, 0.384);
+  background-color: #000000;
+  border-radius: 50px;
+}
+.card-container__card:hover p,
+.card-container__card:hover h2 {
+  color: #ffffff;
+}
+.card-container__card .img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-container__card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+  .card-container__card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-container__card {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-container__card {
+    width: 80%;
+  }
+}
+@media print {
+  .card-container__card {
+    text-decoration: underline;
+  }
+  .card-container__card p,
+  .card-container__card h2 {
+    color: rgb(16, 160, 255) 00;
+  }
+}
