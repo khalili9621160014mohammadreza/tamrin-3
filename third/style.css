@@ -14,6 +14,7 @@ body {
   font-family: "Yekan_Bakh_Regular";
   font-family: 16px;
   min-height: 100vh;
+  background-color: red;
 }
 .card-container {
   display: flex;
@@ -87,5 +88,10 @@ body {
   .card-container__card p,
   .card-container__card h2 {
     color: rgb(16, 160, 255) 00;
+  }
+  .card-container__card:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.075);
+    background-color: #ffffff;
+    border-radius: 10px;
   }
 }
