@@ -114,4 +114,24 @@ ul li {
     text-decoration: underline;
     color: rgb(73, 73, 255);
   }
+  .footer {
+    padding: 12px;
+    max-width: 1300px;
+    margin: 0px auto;
+    display: block;
+  }
+  .footer__functional-link__lists {
+    display: block;
+  }
+  .footer__functional-link__lists__left {
+    padding-right: 0px;
+  }
+  .title {
+    padding: unset;
+    text-align: center;
+  }
+
+  ul li {
+    text-align: center;
+  }
 }
